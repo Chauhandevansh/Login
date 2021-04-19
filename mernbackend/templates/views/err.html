@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript">
+         function check()
+         {
+              if(document.getElementById('firstname').value==NULL || myform.firstname.value.length==0)
+              {
+                  document.getElementById('errorname').value="this is an invalid name";
+              }
+         }
+      </script>
+   </head>
+   <body>
+      <form name="myform">
+         <p>name</p>
+         <input type="text" name="firstname" onblur="check()"/>
+         <span id="errorname"></span>
+         <br/><input type="button" value="submit" />
+      </form>
+   </body>
+</html>
